@@ -1,0 +1,24 @@
+header {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container do player no topo centralizado */
+.spotify-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+/* Estilo do player ampliado */
+.spotify-player {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.spotify-player:hover {
+    transform: scale(1.02);
+}

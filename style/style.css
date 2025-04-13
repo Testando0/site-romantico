@@ -1,0 +1,74 @@
+@import url(../style/chuvadecoraçao.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-preta:#000000;
+    --cor-branca:#FFFFFF;
+    --cor-hover:#303030;
+
+    --fonte-titulo: 'Pacifico', cursive;
+    --fonte-texto: 'Fira Sans', sans-serif;
+    
+}
+
+body{
+    background-color: var(--cor-preta);
+    color: var(--cor-branca);
+}
+
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.cabecalho__imagem-coracao{
+    width: 70px;
+    height: 70px;
+    margin: 1.5rem 0.5rem;
+}
+
+.cabecalho__titulo{
+    font-size: 4rem;
+    font-family: var(--fonte-titulo);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 375px;
+}
+
+.container__link{
+    display: flex;
+    text-decoration: none;
+    color: var(--cor-branca);
+    font-size: 2rem;
+    font-family: var(--fonte-texto);
+    border: #FFFFFF solid 1px;
+    border-radius: 16px;
+    padding: 1.25rem 4rem 1.25rem 2rem;
+    align-items: center;
+}
+
+
+.container__imagem-coracao{
+    width: 60px;
+    margin-right: 1.25rem;
+}
+
+
+
+.container__link:hover{
+    background-color: var(--cor-hover);
+    cursor: pointer;
+}

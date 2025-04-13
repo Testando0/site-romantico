@@ -1,0 +1,161 @@
+@import url(../style/chuvadecoraçao.css);
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-sizing:border-box;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #e91e63;
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.location {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.time {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e91e63;
+}
+
+.carrossel-container {
+    width: 100%;
+    height: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.carrossel {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.spotify-player {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.message-box {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    line-height: 1.6;
+}
+
+.message-title {
+    color: #e91e63;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.message-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.emoji {
+    font-size: 20px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        align-items: center;
+        text-align: center;
+
+    }
+    
+    .carrossel-container {
+        display: flex;
+        height:20rem;
+        width: 20rem;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .message-text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .container {
+        align-items: center;
+        text-align: center;
+
+    }
+    
+    .carrossel-container {
+        display: flex;
+        height:30rem;
+        width: 20rem;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .message-text {
+        font-size: 15px;
+    }
+    
+}
+
+
+
+

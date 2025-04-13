@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho__imagem-coracao" src="./img/coracaofeio.png" alt="imagem de um coração">
+        <h1 class="cabecalho__titulo">Te Amo!</h1>
+        <img class="cabecalho__imagem-coracao" src="./img/coracaofeio.png" alt="imagem de um coração">
+    </header>
+
+    <main>
+        <div class="container">
+            <a class="container__link" href="about.html"><img class="container__imagem-coracao" src="./img/coracao.png" alt="imagem de um coração">Clique
+            </a>
+        </div>
+    </main>
+
+    <script>
+        const hearts = ['❤️', '🧡', '💛', '💚', '💙', '💜', '🖤', '🤍', '🤎'];
+        
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.textContent = hearts[Math.floor(Math.random() * hearts.length)];
+            
+            // Tamanho aleatório
+            const size = Math.random() * 20 + 10;
+            heart.style.fontSize = `${size}px`;
+            
+            // Posição inicial
+            heart.style.left = `${Math.random() * 100}vw`;
+            heart.style.top = `-50px`;
+            
+            // Duração da animação
+            const duration = Math.random() * 3 + 2;
+            heart.style.animationDuration = `${duration}s`;
+            
+            document.body.appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+                createHeart();
+            }, duration * 1000);
+        }
+        
+        // Criar vários corações
+        for (let i = 0; i < 50; i++) {
+            setTimeout(createHeart, i * 300);
+        }
+    </script>
+
+</body>
+
+</html>
