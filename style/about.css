@@ -139,7 +139,7 @@ h1 {
     
     .carrossel-container {
         display: flex;
-        height:17rem;
+        height:15rem;
         width: 13rem;
         align-items: center;
         justify-content: center;
