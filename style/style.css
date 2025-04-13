@@ -72,3 +72,21 @@ body{
     background-color: var(--cor-hover);
     cursor: pointer;
 }
+
+@media (max-width: 900px) {
+    .container{
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .container{
+        font-size: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15rem;
+    }
+}
