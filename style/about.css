@@ -139,8 +139,8 @@ h1 {
     
     .carrossel-container {
         display: flex;
-        height:25rem;
-        width: 15rem;
+        height:17rem;
+        width: 13rem;
         align-items: center;
         justify-content: center;
         margin: 1rem;
@@ -153,6 +153,8 @@ h1 {
     .message-text {
         font-size: 15px;
     }
+
+    
     
 }
 
